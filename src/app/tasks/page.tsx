@@ -8,19 +8,17 @@ async function Tasks({ searchParams }: {
         tasks?: string,
     }>
 }) {
-
     const params = await searchParams;
-
 
     if (!params || !params.users || !params.tasks) {
         redirect("/");
     }
+
     return (
-        <main className="h-full bg-base-200 grid grid-rows-[auto_1fr_auto] ">
+        <main className="min-h-screen h-screen bg-gradient-to-br from-blue-50 to-purple-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
             <TasksAssigned users={params.users} tasks={params.tasks} />
         </main>
     );
-
 }
 
 export default Tasks;
