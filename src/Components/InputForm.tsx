@@ -51,7 +51,7 @@ const InputForm: React.FC<InputFormProps> = ({ queryUsers, queryTasks }) => {
                     <span className="text-sm">{errorMessage}</span>
                 </div>
             )}
-            <div className="bg-white dark:bg-gray-800 overflow-hidden transition-all duration-200">
+            <div className="overflow-hidden transition-all duration-200">
                 <div className="">
 
                     {isLoading ? (
